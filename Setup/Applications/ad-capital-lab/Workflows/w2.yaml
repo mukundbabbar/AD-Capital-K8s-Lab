@@ -56,6 +56,10 @@ rollbackPhases:
       properties:
         filePaths: adcapitaldb-deployment.yaml, rabbitmq-deployment.yaml
         stateTimeoutInMinutes: 10
+    - type: K8S_DEPLOYMENT_ROLLING_ROLLBACK
+      name: Rollback Deployment
+      properties:
+        stateTimeoutInMinutes: 10
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
