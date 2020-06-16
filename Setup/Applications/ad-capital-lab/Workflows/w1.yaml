@@ -56,6 +56,9 @@ rollbackPhases:
       properties:
         filePaths: env-configmap.yaml, secret.yaml
         stateTimeoutInMinutes: 10
+        templateUuid: null
+        templateVariables: null
+        templateVersion: null
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
