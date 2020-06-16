@@ -51,11 +51,6 @@ rollbackPhases:
     phaseStepNameForRollback: Deploy
     statusForRollback: SUCCESS
     steps:
-    - type: K8S_APPLY
-      name: Apply load
-      properties:
-        filePaths: load-deployment.yaml
-        stateTimeoutInMinutes: 10
     - type: K8S_DEPLOYMENT_ROLLING_ROLLBACK
       name: Rollback Deployment
       properties:
