@@ -51,8 +51,6 @@ rollbackPhases:
     phaseStepNameForRollback: Deploy
     statusForRollback: SUCCESS
     steps:
-    - type: K8S_DEPLOYMENT_ROLLING_ROLLBACK
-      name: Rollback Deployment
     - type: K8S_APPLY
       name: Apply CM and secret
       properties:
